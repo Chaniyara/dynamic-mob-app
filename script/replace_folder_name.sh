@@ -22,9 +22,18 @@
 
 #!/bin/bash
 
+# Prompt the user for input
+echo "Please enter your input:"
+
+# Read the input and store it in a variable
+read user_input
+
+# Print the variable
+echo "You entered: $user_input"
+
 # Define the old and new paths
 OLD_PATH="../andorid/app/src/main/java/com/{mahek.mahek}"
-NEW_PATH="../andorid/app/src/main/java/com/wotnot.wotnot"
+NEW_PATH="../andorid/app/src/main/java/com/$user_input"
 
 # Check if the old path exists
 if [ -d "$OLD_PATH" ]; then
